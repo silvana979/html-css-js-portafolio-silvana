@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Silvana Reategui</div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Silvana Reategui</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Silvana Reategui profile picture" /
+      >
+      </div>
+      <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Silvana Reategui</h1>
+      <p class="section__text__p2">Student</p>
+      <div class="btn-container">
+        <button 
+        class="btn btn-color-2" 
+        onclick="window.open('./assets/cv silvana.pdf')"
+        >
+        Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img 
+        src="./assets/linkedin.png" 
+        alt="My Linkedin profile" 
+        class="icon" 
+        onclick="location.href='https://linkedin.com/' "
+        />
+        <img 
+        src="./assets/github.png" 
+        alt="My Github profile" 
+        class="icon" 
+        onclick="location.href='https://Github.com/' "
+        />
+      </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img 
+            src="./assets/about-pic.png" 
+            alt="Profile picture" 
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+            <div class="details-container">
+                <img 
+                src="./assets/experience.png" 
+                alt="Experience icon" 
+                class="icon" 
+                />
+                <h3>Británico</h3>
+                <p>Upper-Intermediate 11 <br />From March 2024 - up to now</p>
+            </div>
+            <div class="details-container">
+              <img 
+                src="./assets/education.png" 
+                alt="Education icon" 
+                class="icon" 
+                />
+                <h3>Universidad Nacional Enrique
+                  Guzmán y Valle</h3>
+                <p> Undergraduate student specialty in
+                  English - Italian<br />From July 2020 - up to now</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>I am a proactive, passionate and dedicated
+              person with what I propose, who adapts
+              easily to requirements. I am committed to
+              continue learning more every day seeking to
+              contribute with my knowledge to more
+              people.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills">
+      <p class="section__text__p1">These are My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+      <div class="about-containers">
+        <div class="details-containers">
+        </div>
+        <div class="details-container"> 
+        <h2 class="skills-sub-title">As a University Student</h2>
+        <div class="article-container">
+        <article>
+        <img 
+          src="./assets/checkmark.png" 
+          alt="Skills icon" 
+          class="icon" 
+        />
+        <div>
+          <h3>Active</h3>
+          <p>Listening</p>
+        </div>
+        </article>
+        <article>
+        <img 
+          src="./assets/checkmark.png" 
+          alt="Skills icon" 
+          class="icon" 
+        />
+        <div>
+          <h3>Critical</h3>
+          <p>Thinking</p>
+        </div>
+        </article>
+        <article>
+        <img 
+          src="./assets/checkmark.png" 
+          alt="Skills icon" 
+          class="icon" 
+        />
+        <div>
+          <h3>Confidence</h3>
+          <p>In myself</p>
+        </div>
+        </article>
+        <article>
+        <img 
+          src="./assets/checkmark.png" 
+          alt="Skills icon" 
+          class="icon" 
+        />
+        <div>
+          <h3>Team</h3>
+          <p>Collaboration</p>
+        </div>
+        </article>
+        </div>
+        </div>
+        <div class="details-container">
+          <h2 class="skills-sub-title">As an English<br>Teacher</h2>
+          <div class="article-container">
+          <article>
+          <img 
+            src="./assets/checkmark.png" 
+            alt="Skills icon" 
+            class="icon" 
+          />
+          <div>
+            <h3>Creative</h3>
+            <p>Person</p>
+          </div>
+          </article>
+          <article>
+          <img 
+            src="./assets/checkmark.png" 
+            alt="Skills icon" 
+            class="icon" 
+          />
+          <div>
+            <h3>Commitment</h3>
+            <p>To my work</p>
+          </div>
+          </article>
+          <article>
+          <img 
+            src="./assets/checkmark.png" 
+            alt="Skills icon" 
+            class="icon" 
+          />
+          <div>
+            <h3>Classroom</h3>
+            <p>Management</p>
+          </div>
+          </article>
+          <article>
+          <img 
+            src="./assets/checkmark.png" 
+            alt="Skills icon" 
+            class="icon" 
+          />
+          <div>
+            <h3>Assessment</h3>
+            <p>and Feedback</p>
+          </div>
+          </article>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Teaching Experience</h1>
+      <div class="slider-container">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <img src="./assets/s1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+              <img src="./assets/s2.png" alt="Image 2">
+            </div>
+            <div class="slide">
+              <img src="./assets/s3.png" alt="Image 3">
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-containers">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./assets/project-1.png" 
+              alt="Project 1" 
+              class="project-img" 
+            />
+          </div>
+          <h2 class="skills-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2 project-btn details-btn" 
+            >
+              Details
+            </button>
+            <button 
+              class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://drive.google.com/file/d/1yB6jPgrLWNlUdX89BPwb9uXc9giAC1hi/view'"
+            >
+              See More
+            </button>
+            <button 
+              class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://drive.google.com/file/d/1CWkrUkUNgQxxAoRSK_r-59S6t01GvIBa/view?usp=sharing'"
+            >
+              Photos
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./assets/project-2.png" 
+              alt="Project 2" 
+              class="project-img" 
+            />
+          </div>
+          <h2 class="skills-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2 project-btn details-btn" 
+            >
+              Details
+            </button>
+            <button 
+              class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://drive.google.com/file/d/1AS6NWalyiRET6PC5yqj-DhnvyHvNeCJc/view?usp=sharing'"
+            >
+              See More
+            </button>
+            <button 
+              class="btn btn-color-2 project-btn" 
+              onclick="location.href='https://drive.google.com/file/d/12gLv_crQGSA25CesN1SaNxPwtGHimcEg/preview'"
+            >
+              Photos
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Modal Box HTML -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div style="text-align: center;">
+          <h2>Project Details</h2>
+        </div>
+        <div class="project-details">
+          <p class="p1">This was done at the Josefa Carrillo y Albornoz school in Chosica called "SPEELING BEE", all high school students were part of this contest. During the English classes we did a role play simulating how the day of the competition was going to be like, they also had the aim of learning the vocabulary not only for the students who were going to participate but also for the rest of the class.</p>
+          <p class="p2">This was done at the San Francisco de Asis school in Santa Anita called "SAVE THE WORLD", the students of the third, fourth and fifth sections of secondary school were in charge of informing and raising awareness to all students about the care of the environment, both in and out of school. In order to carry out the project, a study plan focused on the protection of the environment was developed using the English modal verbs: can-can't, should-shouldn't, must-mustn't.</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img 
+          src="./assets/email.png" 
+          alt="Email icon" 
+          class="icon contact-icon email-icon" 
+          />
+          <p><a href="mailto:your-email@example.com">silvanareategui19@gmail.com</a></
+          p>
+        </div>
+        <div class="contact-info-container">
+          <img 
+          src="./assets/linkedin.png" 
+          alt="LinkedIn icon" 
+          class="icon contact-icon" 
+          />
+          <p><a href="https://www.linkedin.com">Linkedin</a></
+          p>
+        </div>
+      </div> 
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="social-icon">
+              <li class="icon-elem">
+                <a href="https://www.facebook.com" class="icon" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li class="icon-elem">
+                <a href="https://www.instagram.com" class="icon" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li class="icon-elem">
+                <a href="https://www.tiktok.com" class="icon" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+              <li class="icon-elem">
+                <a href="https://www.whatsapp.com" class="icon" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+              <li class="icon-elem">
+                <a href="mailto:your-email@example.com" class="icon" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Silvana Reategui. All Rights Reserved</p>
+      </footer>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
